@@ -15,10 +15,12 @@
     
     - name: firewall
       service:
+        name: firewalld
         state: stopped
         enabled: false
         
     - name: httpd install
       service:
+        name: httpd
         state: started
         enabled: true
